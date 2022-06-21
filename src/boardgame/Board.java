@@ -27,7 +27,29 @@ public class Board {
 	public void setColumns(int columns) {
 		this.columns = columns;
 	}
-	
-	
 
+	public Piece piece(int row, int column) {
+		return pieces[row][column];
+	}
+
+	public Piece piece(Position position) {
+		return pieces[position.getRow()][position.getColumn()];
+	}
+
+	public void placePiece(Piece piece, Position position) {
+
+	}
+
+	public Piece removePiece(Position position) {
+		Piece piece = new Piece();
+		return piece;
+	}
+
+	public boolean positionExists(Position position) {
+		return true;
+	}
+
+	public boolean thereIsAPiece(Position position) {
+		return true;
+	}
 }
