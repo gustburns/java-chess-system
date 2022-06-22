@@ -1,7 +1,7 @@
 package boardgame;
 
 public class Piece {
-	
+
 	protected Position position;
 	private Board board;
 
@@ -10,11 +10,11 @@ public class Piece {
 		position = null;
 	}
 
-	protected Board getBoard() {
-		return board;
+	public Piece() {
 	}
 
-	public Piece() {
+	protected Board getBoard() {
+		return board;
 	}
 
 }
